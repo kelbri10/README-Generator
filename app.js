@@ -1,21 +1,20 @@
-const fs = require('fs'); 
-const inquirer = require ('inquirer'); 
-const generateMarkdown = require ('generateMarkdown'); 
+//PsuedoCode 
 
-// array of questions for user
-const questions = [
+//import fs and inquirer modules 
+//npm install inquire
+//npm init to display dependencies 
 
-];
+//require fs and inquirer
 
-// function to write README file
-function writeToFile(fileName, data) {
-
-}
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
+//when user starts CLI app
+//they are asked about the following: 
+//Title of Project
+//Description
+//Table of Contents - includes links to different parts of README
+//Installation
+//Usage - How to Use
+//License - Display as list of options to select,
+// a badge appears according to selection
+//Contributing - contribution guidelines
+//Tests -Test Instructions
+//Questions - Github username, email address
