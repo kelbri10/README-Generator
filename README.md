@@ -1,10 +1,24 @@
-# README-Generator
+# The ReadME Generator 
 
-## About this Project 
-Creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project.
+## Table of Contents 
+1. [Description](#Description)
+2. [Installation](#Installation)
+3. [Usage](#Usage)
+4. [License](#License)
+5. [Contributors](#Contributors)
 
-The purpose of this project is to create a command-line application that dynamically generates a professional README.md from a user's input using the Inquirer package.
+## Description 
+This CLI application assists users in developing a basic ReadME.md file for their applications and projects. 
+        
+## Installation 
+Inquirer and FS are required in order to utilize this application. 
 
-## Dependencies 
-* InquirerJS 
-* File system
+## Usage 
+To start the CLI app, you must have a CLI such as Git Bash installed. Type Node index.js to initiate the start of the app. The app will then ask a series of questions and will format your response appropriately.
+
+## License 
+This project is licensed under MIT.
+
+## Contributors 
+This project was created by kelbri10. You can email them here: kelbri10@gmail.com.
+

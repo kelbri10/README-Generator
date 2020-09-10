@@ -3,10 +3,13 @@ const fs = require ('fs');
 //import inquirer module to ask user questions
 const inquirer = require ('inquirer'); 
 
+const generateMarkdown = require ('./generateMarkdown'); 
+
+//questions prompted to user in CLI 
 const questions = [
     {
         type: 'input',
-        name: 'projectTitle', 
+        name: 'title', 
         message: 'What is the name of your project?',
     }, 
     {
@@ -16,7 +19,7 @@ const questions = [
     }, 
     {
         type: 'input', 
-        name: 'installation', 
+        name: 'install', 
         message: 'What are the steps to install your project?'
     }, 
     {
@@ -37,14 +40,19 @@ const questions = [
     }, 
     {
         type: 'input', 
-        name: 'emailAddress', 
+        name: 'email', 
         message: 'What is your email address?'
     }
 ]; 
 
-inquirer.prompt(questions).then(answers => {
-    console.log(answer); 
-}); 
-//}).catch (error => {
+//once questions have been answered, call generateReadMe() to use answers to create file
+inquirer.prompt(questions).then(project => {
+    fs.writeFile('readME.md', generateMarkdown(project), 'utf8', err =>{ 
+        if (err) throw err; 
 
-//})
+        console.log('your read me has been created!'); 
+    })
+}); 
+
+
+
