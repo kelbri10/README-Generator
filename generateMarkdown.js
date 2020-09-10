@@ -1,4 +1,4 @@
-// function to generate markdown for README
+// function to generate markdown for README using template literals
 function generateMarkdown(project) {
 
 return `# ${project.title}

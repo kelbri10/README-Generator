@@ -45,12 +45,13 @@ const questions = [
     }
 ]; 
 
-//once questions have been answered, call generateReadMe() to use answers to create file
+//once questions have been answered, 
+//use fs in order to write to readMe file
 inquirer.prompt(questions).then(project => {
     fs.writeFile('readME.md', generateMarkdown(project), 'utf8', err =>{ 
         if (err) throw err; 
 
-        console.log('Your read me has been created!'); 
+        console.log('Your readME.md has been created!'); 
     })
 }); 
 
