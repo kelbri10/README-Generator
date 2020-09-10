@@ -50,7 +50,7 @@ inquirer.prompt(questions).then(project => {
     fs.writeFile('readME.md', generateMarkdown(project), 'utf8', err =>{ 
         if (err) throw err; 
 
-        console.log('your read me has been created!'); 
+        console.log('Your read me has been created!'); 
     })
 }); 
 
